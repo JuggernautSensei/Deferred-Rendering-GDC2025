@@ -1,8 +1,6 @@
 # Deferred Rendering을 이용한 렌더링 최적화
 
-<p align="center"><img src="Resources/G-Buffer-Result.png" alt="법선, 색상과 거칠기, 금속과 차폐광, 깊이를 기록한 G-buffer 디버그 화면과 이를 이용해 색상을 계산한 구 렌더링 결과를 나란히 보여주는 발표 슬라이드" width="840"></p>
-
-*발표 자료 19쪽 — G-buffer에 기록한 기하 정보와 이를 이용해 계산한 최종 화면*
+<p align="center"><img src="Resources/Thumbnail.png" alt="Deferred Rendering — G-buffer와 렌더링 최적화 발표 자료" width="100%"></p>
 
 부경대학교 프로그래밍 동아리 GDC에서 Deferred Rendering을 주제로 발표한 자료입니다. 전통적인 Forward Rendering에서 계산이 낭비되는 지점을 짚고, 이를 Deferred Rendering으로 줄이는 방법을 DirectX 11로 직접 구현한 렌더러에서 확인했습니다.
 
@@ -33,6 +31,10 @@ Forward Rendering은 모델마다 위치 변환, 픽셀 색상 계산, 깊이 �
 ## Deferred Rendering
 
 Deferred Rendering은 렌더링을 두 단계로 나눠 이 낭비를 줄입니다. 첫 단계에서는 모든 모델을 그리되 색상은 계산하지 않고, 화면과 같은 크기의 버퍼에 법선, 깊이, 재질처럼 색상 계산에 필요한 기하 정보만 기록합니다. 이 버퍼 묶음을 G-buffer라고 합니다. 두 번째 단계에서는 G-buffer에 최종적으로 남은 정보만 이용해 화면의 각 픽셀 색상을 한 번만 계산합니다.
+
+<p align="center"><img src="Resources/G-Buffer-Result.png" alt="법선, 색상과 거칠기, 금속과 차폐광, 깊이를 기록한 G-buffer 디버그 화면과 이를 이용해 색상을 계산한 구 렌더링 결과를 나란히 보여주는 발표 슬라이드" width="840"></p>
+
+*발표 자료 19쪽 — G-buffer에 기록한 기하 정보와 이를 이용해 계산한 최종 화면*
 
 <p align="center"><img src="Resources/Forward-vs-Deferred-Pipeline.png" alt="Forward Rendering은 색상 계산이 모델마다 반복되고 Deferred Rendering은 기하 계산만 반복한 뒤 색상 계산을 한 번 수행하는 파이프라인 비교 슬라이드" width="840"></p>
 
