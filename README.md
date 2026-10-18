@@ -1,4 +1,5 @@
 <div align="center">
+  
 # Deferred Rendering을 이용한 렌더링 최적화
 
 <p align="center"><img src="Resources/Thumbnail.png" alt="Deferred Rendering — G-buffer와 렌더링 최적화 발표 자료" width="100%"></p>
