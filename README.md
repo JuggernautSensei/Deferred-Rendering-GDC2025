@@ -4,6 +4,8 @@
 
 <p align="center"><img src="Resources/Thumbnail.png" alt="Deferred Rendering — G-buffer와 렌더링 최적화 발표 자료" width="100%"></p>
 
+</div>
+
 부경대학교 프로그래밍 동아리 GDC에서 Deferred Rendering을 주제로 발표한 자료입니다. 전통적인 Forward Rendering에서 계산이 낭비되는 지점을 짚고, 이를 Deferred Rendering으로 줄이는 방법을 DirectX 11로 직접 구현한 렌더러에서 확인했습니다.
 
 발표는 Forward Rendering의 한계에서 시작해 Deferred Rendering의 2단계 구조와 G-buffer 구성 방법을 설명하고, 같은 장면에서 두 방식을 비교한 성능 측정으로 이어집니다. 마지막으로 Deferred Rendering에서 생기는 안티앨리어싱과 반투명 물체 처리 문제를 해결 방안과 함께 다뤘습니다. 아래에는 각 주제의 내용을 실제 발표 슬라이드와 함께 소개했습니다.
